@@ -58,7 +58,7 @@ Dicas: Se houver erros, verifique o firewall (sudo ufw disable temporariamente) 
 
 
 
- ### Uso na GUI:
+Uso na GUI:
 
 A janela "Port Scanner" abrirá.
 Preencha os campos:
@@ -80,7 +80,7 @@ Dicas de solução de problemas:
 Se a GUI não abrir, confirme o Tkinter com python3 -c "import tkinter".
 Desative o firewall temporariamente para testes: sudo ufw disable (reative com sudo ufw enable).
 Teste com portas comuns (ex.: 22 para SSH, se ativo) para validar.
--------------------------------------------------------------------------------------------------
+
 
  ### Configuração e Execução no Windows
  Pré-requisitos:
@@ -89,7 +89,7 @@ Teste com portas comuns (ex.: 22 para SSH, se ativo) para validar.
  Tkinter (vem incluído na instalação padrão do Python). 
  Acesso ao Prompt de Comando ou PowerShell.
 
-## Passos para configurar e executar:
+Passos para configurar e executar:
 
 Instale o Python:
 
