@@ -1,13 +1,13 @@
 # nmap_tester
 
-### Passo a Passo para Configurar e Executar a Ferramenta em Linux Mint e Windows
+## Passo a Passo para Configurar e Executar a Ferramenta em Linux Mint e Windows
 O  script port_scanner_gui.py (a ferramenta de varredura de portas com interface gráfica) em Linux e Windows. 
 
 1. Configuração e Execução no Linux 
 Pré-requisitos:
 
- # Python 3 instalado (geralmente já vem pré-instalado no Linux Mint).
- # Tkinter para a interface gráfica.
+ ### Python 3 instalado (geralmente já vem pré-instalado no Linux Mint).
+ ### Tkinter para a interface gráfica.
  # Acesso ao terminal.
 
  ## Passos para configurar e executar:
