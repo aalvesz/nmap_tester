@@ -52,11 +52,7 @@ Preencha os campos: Host(s) (ex.: 127.0.0.1), Portas (ex.: 1-100,443), Tipo (TCP
 Clique em "Iniciar Varredura" para ver os resultados.
 Use os botões para limpar ou salvar os resultados.
 
-
-
 Dicas: Se houver erros, verifique o firewall (sudo ufw disable temporariamente) ou teste com portas locais ativas (ex.: 22 para SSH).
-
-
 
 Uso na GUI:
 
@@ -101,18 +97,16 @@ Marque "Install Tcl/Tk and IDLE" (para garantir o Tkinter).
 
 
 Verifique a instalação no Prompt de Comando (Win + R, digite cmd, Enter):
-textpython --version
+python --version
 
 Se não funcionar, reinstale e confirme o PATH.
-
-
 
 
 ## Salve o script:
 
 Abra um editor de texto (ex.: VS Code, Notepad++, ou Bloco de Notas).
-Cole o código completo do script em um arquivo chamado port_scanner_gui.py.
-Salve em um diretório acessível (ex.: C:\Users\SeuUsuario\Documents\port_scanner_gui.py).
+Cole o código completo do script em um arquivo chamado nmap_tester_gui.py.
+Salve em um diretório acessível (ex.: C:\Users\SeuUsuario\Documents\nmap_tester_gui.py).
 Certifique-se de salvar com codificação UTF-8 e quebras de linha Unix (se usando VS Code, configure em "LF" no canto inferior direito).
 
 
@@ -120,20 +114,20 @@ Certifique-se de salvar com codificação UTF-8 e quebras de linha Unix (se usan
 
 Pressione Win + R, digite cmd ou powershell, e pressione Enter.
 Navegue até o diretório do script:
-textcd C:\Users\SeuUsuario\Documents
+cd C:\Users\SeuUsuario\Documents
 
 
 
 ## Execute o script:
 
 Para execução normal (TCP funciona bem; UDP pode ser menos preciso sem privilégios):
-textpython port_scanner_gui.py
+  python nmap_tester_gui.py
 
 Para varreduras UDP mais precisas (requer privilégios de administrador):
 
 Clique com o botão direito no Prompt de Comando ou PowerShell e selecione "Executar como administrador".
 Execute:
-textpython port_scanner_gui.py
+  python nmap_tester_gui.py
 
 
 
@@ -158,8 +152,8 @@ Use "Salvar Resultados" para exportar para scan_results.txt.
 
 Se a GUI não abrir, confirme o Tkinter com python -c "import tkinter".
 Desative o firewall temporariamente para testes: Abra o Prompt como administrador e execute:
-textnetsh advfirewall set allprofiles state off
+  netsh advfirewall set allprofiles state off
 Reative com:
-textnetsh advfirewall set allprofiles state on
+  netsh advfirewall set allprofiles state on
 
 Teste com portas comuns (ex.: 80 para um servidor web local, se ativo) para validar.
